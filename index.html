@@ -15,7 +15,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="body">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
     <div class="container">
       <div class="navbar-header">
@@ -25,7 +25,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><i class="fa fa-laptop" aria-hidden="true"></i>
+        <a class="navbar-brand" href="#"></a>
+        <i class="fa fa-laptop" aria-hidden="true"></i>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -58,14 +59,14 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-lg-offset-2">
-          <p class="content-text" style="text-align:justify;">Com 24 anos de idade, apaixonado por informática
-            iniciei na area de TI, hoje atuo como Desenvolvedor WEB e Analista de SEO. Minhas
-            responsabilidades são, realizar implementações, no intuito de otimizar o produto do cliente, meu
-            desejo é conseguir mais experiência em frontend.
+          <p class="content-text" style="text-align:initial;">Com 24 anos de idade, apaixonado por informática desde novo
+            iniciei na area de TI a 3 anos, hoje atuo como Desenvolvedor WEB e Analista de SEO. Minhas
+            responsabilidades são, realizar implementações, no intuito de otimizar o produto do cliente. Meu
+            desejo é conseguir mais experiência em frontend e aumentar cada vez mais meu conhecimento.
           </p>
         </div>
         <div class="col-lg-4">
-          <p class="content-text">Hoje visando buscar mais conhecimento
+          <p class="content-text">Hoje visando buscar conhecimento
             estou cada vez mais me aprofundando em algumas linguagens,
             como me identifiquei muito com
             desenvolvimento front-end, busco sempre
@@ -246,7 +247,7 @@
   <!-- Contact form -->
   <div class="container-fluid contact-me-container content-section" id="contact">
     <div class="container">
-      <h1 class="intro-text text-center">Contact Me</h1>
+      <h1 class="intro-text text-center">Entre em Contato</h1>
       <hr class="star-light">
       <div class="row">
         <!-- <div class="col-sm-12 col-md-12">
@@ -274,15 +275,15 @@
 
                 <div class="col-sm-12">
                     <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                </div> -->
+                </div>
 
-        <!-- <button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i>
+        <button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i>
                   Send</button> -->
       </div>
 
       <div class="text-center">
         <div class="text-center">
-          <h4 class="text-center title-contact">Aqui estão todos os meio em que pode me contatar !</h4>
+          <h4 class="text-center title-contact">Aqui estão todos os meios em que pode me contatar !</h4>
           <div class="text-center social-buttons">
             <a href="https://www.facebook.com/guilherme.noe.3/" target="_blank"
               class="btn btn-default btn-lg social-button link-facebook"><i class="fa fa-facebook"></i>
@@ -307,8 +308,9 @@
       </div>
     </div>
   </div>
+
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container footer-container">
       <h4 class="title-footer"></h4>
     </div>
@@ -316,6 +318,10 @@
   z-index:1000;" target="_blank">
       <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
+
+    <div id="colorMode">
+      <i class="fa fa-moon-o" class="dark-mode" aria-hidden="true"></i>
+  </div>
   </footer>
 
 
@@ -325,6 +331,9 @@
   <script src="/owlcarousel/owl.carousel.min.js"></script>
   <script src="/carousel-active.js"></script>
   <script src="/scripts.js"></script>
+  <script src="/darkmode.js"></script>
+
+
 </body>
 
 </html>

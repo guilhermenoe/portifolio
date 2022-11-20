@@ -17,18 +17,25 @@
 //     });
 //   });
 
-$(document).ready(function () {
-  $("#news-slider").owlCarousel({
-    items: 3,
-    itemsDesktop: [1199, 3],
-    itemsDesktopSmall: [980, 2],
-    itemsMobile: [600, 1],
-    navigation: true,
-    loop: true,
-    nav: true,
-    dots: true,
-    navigationText: ["", ""],
-    pagination: true,
-    autoPlay: true,
-  });
-});
+$("#news-slider").owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          loop:true
+      },
+      600:{
+          items:2,
+          nav:true,
+          loop:true
+      },
+      1000:{
+          items:2,
+          nav:true,
+          loop:true
+      }
+  }
+})
