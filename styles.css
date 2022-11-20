@@ -35,7 +35,7 @@ ul.navbar-nav li {
     background-size: auto !important;
   }
   .profile-image{
-    opacity: 0;
+    opacity: 100% !important;
   }
 }
 .container-fluid {
