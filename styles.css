@@ -564,8 +564,8 @@ hr.copyright {
   position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20%;
-    right: 20px;
+    bottom: 40px;
+    left: 20px;
     background-color: gray;
     color: #FFF;
     border-radius: 50px;
