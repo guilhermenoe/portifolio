@@ -1,14 +1,24 @@
 html {
   scroll-behavior: smooth;
 }
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
+  outline: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: "Raleway", sans-serif !important;
 }
 #menu {
   background-color: #ffffff79;
+  backdrop-filter: blur(10px);
 }
 i.fa.fab.fab.fa-whatsapp {
-  color: #25D366;
+  color: #25d366;
 }
 .content-button {
   display: flex;
@@ -31,10 +41,10 @@ ul.navbar-nav li {
   ul.navbar-nav {
     float: none;
   }
-  #splash.darkmode{
+  #splash.darkmode {
     background-size: auto !important;
   }
-  .profile-image{
+  .profile-image {
     opacity: 100% !important;
   }
 }
@@ -54,7 +64,6 @@ ul.navbar-nav li {
 }
 .navbar-brand {
   padding: 10px 15px !important;
-  
 }
 i.fa.fa-laptop {
   font-size: 30px;
@@ -82,10 +91,9 @@ a.navbar-brand .fa-globe:hover {
   max-width: 996px;
 }
 .splash {
-  /* background:url("https://unsplash.com/photos/nd_6z4JFK4g/download?force=true") no-repeat fixed center bottom; */
-  background: url("/assets/background-4.jpg") no-repeat fixed center bottom;
+  background: url("https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat fixed center bottom;
   background-size: cover;
-  color: #fff;
+  color: #000;
 }
 h4.text-center.title-contact {
   color: #fff;
@@ -124,6 +132,7 @@ h1.intro-text {
   font-size: 30px;
   margin-bottom: 1em;
   font-family: Rockwell;
+  color: #000;
 }
 .navbar-inverse {
   border: none !important;
@@ -225,7 +234,7 @@ section h2 {
 }
 section.success {
   color: #fff;
-  background: rgb(13, 79, 136);
+  background: #3b5998;
   padding: 2%;
 }
 
@@ -274,7 +283,7 @@ hr.star-portfolio:after {
 }
 hr.star-light:after {
   color: #fff;
-  background-color: rgb(13, 79, 136);
+  background-color: #3b5998;
 }
 p.content-text {
   font-size: 25px;
@@ -321,7 +330,7 @@ p.content-text {
 /* Contact */
 .contact-me-container {
   padding: 3%;
-  background: rgb(13, 79, 136);
+  background: #3b5998;
 }
 .fa-user,
 .fa-at,
@@ -558,21 +567,36 @@ hr.copyright {
   }
 }
 
+.contact-us {
+  position: fixed;
+  display: grid;
+  bottom: 20px;
+  right: 20px;
+  flex-direction: column-reverse;
+  gap: 16px;
+  z-index: 1;
+}
+.contact-us .button-whats {
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+}
 
 /* darkmode */
-#colormode{
-  position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 20px;
-    background-color: gray;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
+.contact-us .button-theme {
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
 }
 i.fa.fa-moon-o {
   width: 100%;
@@ -582,66 +606,75 @@ i.fa.fa-moon-o {
   justify-content: center;
 }
 
-.success.darkmode{
+.success.darkmode {
   background-color: #1f1b24;
 }
-.success.darkmode a{
+.success.darkmode a {
   color: white;
   border: 1px solid white;
   padding: 10px;
   margin-top: 50px;
 }
-#contact.darkmode{
+#contact.darkmode {
   background-color: #1f1b24;
 }
-#portfolio.darkmode{
+#portfolio.darkmode {
   background-color: #28252d;
 }
-#portfolio.darkmode h2{
+#portfolio.darkmode h2 {
   color: white;
 }
-#portfolio.darkmode h3{
+#portfolio.darkmode h3 {
   color: white;
 }
-#about.darkmode.section.success a{
- color: white;
+#about.darkmode.section.success a {
+  color: white;
 }
-.footer.darkmode{
+.footer.darkmode {
   background-color: #28252d;
 }
-#colormode.darkmode{
+#colormode.darkmode {
   color: white;
 }
-#menu.darkmode{
-  background-color:#1f1b24;
+#menu.darkmode {
+  background-color: #1f1b24;
 }
-#menu.darkmode a{
-  color:white !important;
+#menu.darkmode a {
+  color: white !important;
 }
-#menu.darkmode i{
-  color:white !important;
+#menu.darkmode i {
+  color: white !important;
   padding: 10px;
 }
-#splash.darkmode{
-  background: url(/assets/bg.jpg) no-repeat center ;
+#splash.darkmode {
+  background: url(/assets/bg.jpg) no-repeat center;
   background-size: 100% auto;
 }
-#body.darkmode{
+
+
+#splash.darkmode h1, #splash.darkmode .lead{
+  color: white;
+}
+
+
+#body.darkmode {
   background-color: #000;
 }
 
+/* .darkmode #body, .darkmode #splash, .darkmode #menu */
+
 /* dotscarousell */
-#news-slider{
+#news-slider {
   position: relative;
 }
 
-.owl-carousel .owl-nav button.owl-prev{
+.owl-carousel .owl-nav button.owl-prev {
   color: #2196f3;
   font-size: 30px;
   position: absolute;
   top: 50%;
 }
-.owl-carousel .owl-nav button.owl-next{
+.owl-carousel .owl-nav button.owl-next {
   color: #2196f3;
   font-size: 30px;
   position: absolute;

@@ -16,5 +16,4 @@ btndark.addEventListener('click', function(){
     footer.classList.toggle('darkmode')
     btndark.classList.toggle('darkmode')
     divBody.classList.toggle('darkmode')
-
 })
