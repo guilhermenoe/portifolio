@@ -99,6 +99,7 @@ h4.text-center.title-contact {
   color: #fff;
 }
 .splash .container {
+  height: 100vh;
   padding-top: 15vh; /* No JS fallback*/
   padding-bottom: 10vh; /* No JS fallback*/
 }
@@ -647,7 +648,7 @@ i.fa.fa-moon-o {
   padding: 10px;
 }
 #splash.darkmode {
-  background: url(/assets/bg.jpg) no-repeat center;
+  background: url(/assets/bg.jpg) no-repeat top right;
   background-size: 100% auto;
 }
 
